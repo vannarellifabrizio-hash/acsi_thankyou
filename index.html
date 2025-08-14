@@ -26,13 +26,26 @@
   <!-- End Meta Pixel Code -->
 
   <style>
-    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height:1.5; background:#000; color:#fff; }
-    .wrap { min-height: 100dvh; display:grid; place-items:center; padding: 2rem; }
+    body { 
+      margin:0; 
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; 
+      line-height:1.5; 
+      background: linear-gradient(
+          to top, 
+          rgba(255,20,147,1) 0%, 
+          rgba(255,105,180,0.9) 50%, 
+          transparent 100%
+        ), 
+        #000; 
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color:#fff; 
+    }
+    .wrap { min-height: 100dvh; display:grid; place-items:center; padding: 2rem; text-align:center; }
     main { max-width: 720px; width:100%; }
-    .card { border-radius:16px; padding:2rem; background:#000; text-align:center; }
     .logo { max-width: 300px; margin: 0 auto 2rem; display:block; }
     h1 { font-size:1.25rem; margin:0 0 .5rem; font-weight:bold; }
-    p { margin:.25rem 0 1.5rem; color:#ccc; }
+    p { margin:.25rem 0 1.5rem; color:#fff; background:#000; padding:0.5rem 1rem; border-radius:8px; display:inline-block; }
     .actions { display:flex; flex-direction:column; gap:.75rem; align-items:center; margin-top:1rem; }
     .btn { appearance:none; border-radius:999px; padding:.75rem 1.25rem; border:none; background:#fff; color:#000; text-decoration:none; font-weight:600; cursor:pointer; transition: background .2s, color .2s; }
     .btn:hover { background:#333; color:#fff; }
@@ -41,16 +54,14 @@
 <body>
   <div class="wrap">
     <main>
-      <div class="card">
-        <img src="logo-acsi-gazzetta-cisalfa.png" alt="ACSI Gazzetta Football League powered by Cisalfa" class="logo">
+      <img src="logo-acsi-gazzetta-cisalfa.png" alt="ACSI Gazzetta Football League powered by Cisalfa" class="logo">
 
-        <h1>Grazie, modulo inviato correttamente.</h1>
-        <p>Verrai contattato il prima possibile dal nostro Staff.</p>
-        <div class="actions">
-          <a class="btn" href="brochure.pdf" download>Scarica Brochure (PDF)</a>
-          <a class="btn" href="regolamento.pdf" download>Scarica Regolamento (PDF)</a>
-          <button class="btn" id="closeBtn" type="button">Chiudi</button>
-        </div>
+      <h1>Grazie, modulo inviato correttamente.</h1>
+      <p>Verrai contattato il prima possibile dal nostro Staff.</p>
+      <div class="actions">
+        <a class="btn" href="brochure.pdf" download>Scarica Brochure (PDF)</a>
+        <a class="btn" href="regolamento.pdf" download>Scarica Regolamento (PDF)</a>
+        <button class="btn" id="closeBtn" type="button">Chiudi</button>
       </div>
     </main>
   </div>
